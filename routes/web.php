@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'IndexController@index')->name('index');
+
+Auth::routes(['verify' => true]);
+
+Route::group(['middleware' => ['auth']], function() {
+ Route::get('result', 'ResultController@index')->name('result');
+ Route::get('detail/{id}', 'IndexController@show')->name('show');
+ Route::post('thank', 'IndexController@store')->name('store');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

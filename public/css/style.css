@@ -1,0 +1,82 @@
+body,h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/*=======================
+  index
+=========================*/
+.image-matome{
+  width: 1100px;
+  margin: auto;
+}
+.image{
+  width: 320px;
+  height: 430px;
+  overflow: hidden;
+  border: 1px solid black;
+  float: left;
+  margin-bottom: 5em;
+  margin-right: 2.5em;
+}
+.image img{
+  width: 100%;
+  height: 50%;
+}
+.image .name{
+  text-align: right;
+}
+.image .slogan{
+  width: 90%;
+  margin: auto;
+}
+.image .text{
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+/*========================
+  detail
+==========================*/
+.detail-image{
+  width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+.detail-image img{
+  width: 600px;
+  height: 400px;
+  margin-bottom: 0.25em;
+}
+.detail-image h3{
+  width: 600px;
+  margin: auto;
+  text-align: right;
+  font-size: 2.5em;
+  margin-bottom: 0.25em;
+}
+.detail-image h3->a{
+  font-size: 2em;
+}
+.detail-image h4{
+  width: 700px;
+  margin: auto;
+  font-size: 3em;
+  color: red;
+  margin-bottom: 0.25em;
+}
+.detail-image p{
+  width: 600px;
+  margin: auto;
+  margin-bottom: 1em;
+}
+.detail-image .detail-submit{
+  width: 600px;
+  font-size: 2em;
+  margin-bottom: 2em;
+  margin: auto;
+  text-align: right;
+}
